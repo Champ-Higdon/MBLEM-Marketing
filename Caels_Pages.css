@@ -1,0 +1,142 @@
+		
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color: #222222;
+    color: #ffffff;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald/Oswald-VariableFont_wght.ttf') format('truetype'); /* Adjust path */
+    font-weight: 100 900; /* Define the range of weights */
+}
+header {
+	font-family: 'Oswald', sans-serif;
+    font-weight: 700; /* Use a heavier weight */
+	font-size: 200%;
+	background-color: #222;
+    color: #F9DB57;
+    padding: 20px 0;
+    text-align: center;
+}
+.M{
+	color: #F9DB57;
+	text-decoration-line: underline;
+}
+.BLEM{
+	color: #FFFFFF;
+	text-decoration-line: underline;
+	text-decoration-color: #F9DB57;
+}
+.Marketing{
+	color: #555555;
+	text-decoration-line: underline;
+	text-decoration-color: #F9DB57;
+}
+/* Remove padding on the home page */
+.home-page header {
+	padding: 0;
+}
+.header-image {
+	width: 100%;
+	height: auto;
+	padding: 0; /* Ensure the image itself has no padding */
+    margin: 0;  /* Ensure the image has no margin */
+	display: block; /* Removes any inline spacing below the image */
+}
+nav {
+	background-color: #444;
+    padding: 0px;
+    text-align: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+	display: flex; /* Use Flexbox */
+    justify-content: center; /* Center the links horizontally */
+}
+nav a {
+	color: #fff;
+    margin: 0 0px;
+    text-decoration: none;
+    font-weight: bold;
+	padding: 20px 35px; /* Add padding to make the link area bigger */
+    display: inline-block; /* Make the links behave like blocks */
+    background-color: #444; /* Initial background color */
+    /*border-radius: 5px; /* Optional: round the corners */
+}
+nav a:hover {
+/*background-color: #000000;*/
+	color: #000000;
+    text-decoration: underline;
+	background-color: #F9DB57;
+}
+.container {
+	max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.gallery img {
+	width: 30%;
+    margin: 10px;
+    border: 2px solid #ddd;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+	transform: scale(1.05);
+}
+.service-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 40px auto;
+	max-width: 1000px;
+}
+.service {
+    width: 45%; /* Adjusts the width of the service container */
+    cursor: pointer;
+    position: relative;
+    display: inline-block; /* Make sure the container is inline-block to size with the images */
+    margin: 10px; /* Space between the service containers */
+}
+
+.service img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any inline spacing below the image */
+}
+.service img:hover {
+    transform: scale(1.05);
+    transition: transform 0.6s ease-in-out; /* Smoother scaling */
+}
+.service {
+    width: 45%;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+    font-size: 2vw; /* Scales with the viewport width */
+}
+
+.service:hover .overlay {
+    background: rgba(249, 219, 87, 0.8); /* Change to your hover color */
+    color: #000000;
+	transform: matrix(1.05, 0, 0, 1.05, 0, 10);
+    /*transform: scale(1.05);*/
+    transition: background-color 0.6s ease-in-out, transform 0.6s ease-in-out; /* Smoother background color and scaling */
+}
+
+

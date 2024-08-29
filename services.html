@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - MBLEM Marketing</title>
+    <link rel="stylesheet" href="Caels_Pages.css">
+</head>
+<body>
+
+    <header>
+        <h1><span class="M">M</span><span class="BLEM">BLEM</span><span class="Marketing"> Marketing</span></h1> 
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <h2>Our Services</h2>
+    </div>
+
+    <div class="service-container">
+        <!-- Logos Section -->
+        <div class="service" onclick="window.location.href='logos.html'">
+            <img id="logos" src="Caels_Website_Pictures/IMG_Cael_01.JPEG" alt="Logos">
+            <div class="overlay">Logos</div>
+        </div>
+        
+        <!-- Business Cards Section -->
+        <div class="service" onclick="window.location.href='business-cards.html'">
+            <img id="business-cards" src="Caels_Website_Pictures/IMG_Cael_02.JPEG" alt="Business Cards">
+            <div class="overlay">Business Cards</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MBLEM Marketing. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const logos = [
+            'Caels_Website_Pictures/IMG_Cael_01.JPEG',
+            'Caels_Website_Pictures/IMG_Cael_04.PNG'
+        ];
+        
+        const businessCards = [
+            'Caels_Website_Pictures/IMG_Cael_02.JPEG',
+            'Caels_Website_Pictures/IMG_Cael_03.JPEG'
+        ];
+        
+        let logoIndex = 0;
+        let businessCardIndex = 0;
+        
+        function switchImages() {
+            document.getElementById('logos').src = logos[logoIndex];
+            document.getElementById('business-cards').src = businessCards[businessCardIndex];
+            
+            logoIndex = (logoIndex + 1) % logos.length;
+            businessCardIndex = (businessCardIndex + 1) % businessCards.length;
+        }
+        
+        setInterval(switchImages, 3000); // Change image every 3 seconds
+    </script>
+
+</body>
+</html>
+
