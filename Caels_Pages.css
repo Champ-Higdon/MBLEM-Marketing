@@ -143,11 +143,12 @@ nav a:hover {
 }
 /* Vertical Line Styles */
 .line {
-    position: absolute; /* Position it absolutely to the parent container */
+    position: fixed; /* Fixed position to stay in place when scrolling */
     top: 60px; /* Adjust this value to match the height of your navigation */
     width: 5px;
     background-color: #F9DB57;
     height: calc(100vh - 60px); /* Subtracts the height of the navigation from the full viewport height */
+    z-index: 999; /* Ensures lines are on top of the content */
 }
 
 .left-line {
