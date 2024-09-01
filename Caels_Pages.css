@@ -141,16 +141,23 @@ nav a:hover {
     /*transform: scale(1.05);*/
     transition: background-color 0.6s ease-in-out, transform 0.6s ease-in-out; /* Smoother background color and scaling */
 }
+/* Vertical Line Styles */
 .line {
-  width: 5px; /* Width of the line */
-  background-color: #F9DB57; /* Line color */
-  height: 100vh; /* Full height of the viewport */
+    position: absolute; /* Position it absolutely to the parent container */
+    top: 60px; /* Adjust this value to match the height of your navigation */
+    width: 5px;
+    background-color: #F9DB57;
+    height: calc(100vh - 60px); /* Subtracts the height of the navigation from the full viewport height */
 }
 
 .left-line {
-  margin-right: 20px; /* Adjust the spacing as needed */
+    left: 0; /* Position on the left side */
+    margin-left: 20px; /* Adjust the spacing from the left if needed */
 }
 
 .right-line {
-  margin-left: 20px; /* Adjust the spacing as needed */
+    right: 0; /* Position on the right side */
+    margin-right: 20px; /* Adjust the spacing from the right if needed */
+}
+
 
