@@ -157,7 +157,7 @@ nav a:hover {
     /*top: 80px; */
     width: 5px;
     background-color: #F9DB57;
-    height: 60px;
+    height: calc(100vh - 60px);
     z-index: 999; /* Ensures lines are on top of the content */
 }
 
