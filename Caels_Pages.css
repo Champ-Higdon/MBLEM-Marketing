@@ -155,6 +155,7 @@ nav a:hover {
 .line {
     position: relative; /*Child of the body*/
     top: 40px;
+    bottom: 40px;
     width: 5px;
     background-color: #F9DB57;
     height: auto; /*100vh is whole height, -60px was for the nav bar, but I'm not sure now, and another -40px is for "top: 40px;" */
