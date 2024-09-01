@@ -73,19 +73,19 @@ nav a:hover {
 	background-color: #F9DB57;
 }
 .container {
-	display: flex;
-	/*justify-content: center;
-	align-items: flex-start;*/
-	justify-content: space-around;
+	/*display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	justify-content: space-around;*/
 	max-width: 1200px;
 	margin: 20px auto;
 	padding: 0 20px;
 }
 .container2 {
-	/*display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	justify-content: space-around;*/
+	display: flex;
+	/*justify-content: center;
+	align-items: flex-start;*/
+	justify-content: space-around;
 	max-width: 1200px;
 	margin: 20px auto;
 	padding: 0 20px;
