@@ -138,5 +138,16 @@ nav a:hover {
     /*transform: scale(1.05);*/
     transition: background-color 0.6s ease-in-out, transform 0.6s ease-in-out; /* Smoother background color and scaling */
 }
+.line {
+  width: 5px; /* Width of the line */
+  background-color: #F9DB57; /* Line color */
+  height: 100vh; /* Full height of the viewport */
+}
 
+.left-line {
+  margin-right: 20px; /* Adjust the spacing as needed */
+}
+
+.right-line {
+  margin-left: 20px; /* Adjust the spacing as needed */
 
