@@ -157,7 +157,7 @@ nav a:hover {
     top: 40px;
     width: 5px;
     background-color: #F9DB57;
-    height: calc(100vh - 100px); /*100vh is whole height, -60px was for the nav bar, but I'm not sure now, and another -40px is for "top: 40px;" */
+    height: auto; /*100vh is whole height, -60px was for the nav bar, but I'm not sure now, and another -40px is for "top: 40px;" */
     z-index: 999; /* Ensures lines are on top of the content */
 }
 
