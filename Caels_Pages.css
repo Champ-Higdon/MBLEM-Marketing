@@ -81,6 +81,15 @@ nav a:hover {
 	margin: 20px auto;
 	padding: 0 20px;
 }
+.container {
+	/*display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	justify-content: space-around;*/
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 0 20px;
+}
 .gallery img {
 	width: 30%;
     margin: 10px;
