@@ -154,10 +154,10 @@ nav a:hover {
 /* Vertical Line Styles */
 .line {
     position: inherit; /*Child of the body*/
-    top: 80px; 
+    /*top: 80px; */
     width: 5px;
     background-color: #F9DB57;
-    height: calc(100vh - 60px); /* Subtracts the height of the navigation from the full viewport height */
+    height: 60px;
     z-index: 999; /* Ensures lines are on top of the content */
 }
 
