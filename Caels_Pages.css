@@ -1,10 +1,26 @@
-		
+:root{
+	--size-mult: 1.25em;
+}
+p {
+	font-size: var(--size-mult);
+	line-height: 1.4;
+}
+h1{
+	
+}
+h2{
+	font-size: calc(var(--size-mult) * 1.5);
+}
+
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #222222;
-	color: #ffffff;
+    background-color: #222222;
+    color: #ffffff;
+}
+footer{
+	clear: both;
 }
 @font-face {
     font-family: 'Oswald';
@@ -72,24 +88,55 @@ nav a:hover {
     text-decoration: underline;
 	background-color: #F9DB57;
 }
-.container {
-	/*display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	justify-content: space-around;*/
+.container { /*LARGER CONTAINTER*/
 	max-width: 1200px;
-	margin: 20px auto;
-	padding: 0 20px;
+    margin: 20px auto;
+    padding: 0 20px;
+	min-height: 50vh;
+	text-align: justify;
 }
-.container2 {
-	display: flex;
-	/*justify-content: center;
-	align-items: flex-start;*/
-	justify-content: space-around;
+.sub-container{
 	max-width: 1200px;
-	margin: 20px auto;
-	padding: 0 20px;
+    margin: 20px auto;
+    padding: 0 20px;
+	text-align: justify;
 }
+.container-border {
+	max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    border-right: 3px solid #F9DB57; /* Right border in yellow */
+    border-left: 3px solid #F9DB57; /* Left border in yellow */
+	min-height: 50vh
+}
+.flex-container-border {
+	max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    border-right: 3px solid #F9DB57; /* Right border in yellow */
+    border-left: 3px solid #F9DB57; /* Left border in yellow */
+	min-height: 50vh
+}
+.container-quote {
+	/*position: relative;
+	right: 100px;
+	top: 50px;*/
+    width: 30%;
+    float: right; /* Float the quote to the right side */
+    margin: 0px 20px 20px 20px; /* Adds space around the box; adjust to taste */
+    padding: 0 20px; /* Adds padding inside the quote box */
+    background-color: #444; /* Background color to make the float visible */
+    border: 3px solid #F9DB57; /* Right border in yellow */
+    border-left: 3px solid #F9DB57; /* Left border in yellow */
+    shape-outside: inset(0); /* Makes text wrap tightly around the box */
+}
+
+.flex-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
 .gallery img {
 	width: 30%;
     margin: 10px;
@@ -151,25 +198,3 @@ nav a:hover {
     /*transform: scale(1.05);*/
     transition: background-color 0.6s ease-in-out, transform 0.6s ease-in-out; /* Smoother background color and scaling */
 }
-/* Vertical Line Styles */
-.line {
-    position: relative; /*Child of the body*/
-    /*top: 40px;*/
-    /*bottom: 40px;*/
-    width: 5px;
-    background-color: #F9DB57;
-    height: auto; /*100vh is whole height, -60px was for the nav bar, but I'm not sure now, and another -40px is for "top: 40px;" */
-    z-index: 999; /* Ensures lines are on top of the content */
-}
-
-.left-line {
-    left: 0; /* Position on the left side */
-    margin-left: 20px; /* Adjust the spacing from the left if needed */
-}
-
-.right-line {
-    right: 0; /* Position on the right side */
-    margin-right: 20px; /* Adjust the spacing from the right if needed */
-}
-
-
