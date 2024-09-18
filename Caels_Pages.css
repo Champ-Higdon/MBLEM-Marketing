@@ -95,6 +95,10 @@ nav a:hover {
 	min-height: 50vh;
 	text-align: justify;
 }
+.text-img {
+    width: 100%; /* Default: image takes full width of the container */
+    height: auto;
+}
 .sub-container{
 	max-width: 1200px;
     margin: 20px auto;
@@ -107,7 +111,7 @@ nav a:hover {
     padding: 0 20px;
     border-right: 3px solid #F9DB57; /* Right border in yellow */
     border-left: 3px solid #F9DB57; /* Left border in yellow */
-	min-height: 50vh
+	min-height: 50vh;
 }
 .flex-container-border {
 	max-width: 1200px;
