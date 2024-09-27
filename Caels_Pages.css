@@ -78,6 +78,12 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 	padding: 20px 35px; /* Add padding to make the link area bigger */
+    
+    /* Media query for smaller screens (below 600px) */
+    @media (max-width: 600px) {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+    
     display: inline-block; /* Make the links behave like blocks */
     background-color: #444; /* Initial background color */
     /*border-radius: 5px; /* Optional: round the corners */
