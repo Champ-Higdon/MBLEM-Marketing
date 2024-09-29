@@ -77,11 +77,11 @@ nav a {
     margin: 0 0px;
     text-decoration: none;
     font-weight: bold;
-	padding: 20px 35px; /* Add padding to make the link area bigger */
-    
+	
+    padding: 20px 35px; /* Add padding to make the link area bigger */
     /* Media query for smaller screens (below 600px) */
     @media (max-width: 600px) {
-    padding: 10px 20px; /* Adjust padding for smaller screens */
+    padding: 20px 20px; /* Adjust padding for smaller screens */
     }
     
     display: inline-block; /* Make the links behave like blocks */
@@ -128,18 +128,23 @@ nav a:hover {
 	min-height: 50vh
 }
 .container-quote {
-	/*position: relative;
-	right: 100px;
-	top: 50px;*/
     width: 30%;
     float: right; /* Float the quote to the right side */
-    margin: 0px 20px 20px 20px; /* Adds space around the box; adjust to taste */
+    margin: 0px 20px 20px 20px; /* Adds space around the box */
     padding: 0 20px; /* Adds padding inside the quote box */
     background-color: #444; /* Background color to make the float visible */
     border: 3px solid #F9DB57; /* Right border in yellow */
     border-left: 3px solid #F9DB57; /* Left border in yellow */
     shape-outside: inset(0); /* Makes text wrap tightly around the box */
 }
+
+/* Media query for smaller screens (below 600px) */
+@media (max-width: 600px) {
+    .container-quote {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+}
+
 
 .flex-container {
     max-width: 1200px;
