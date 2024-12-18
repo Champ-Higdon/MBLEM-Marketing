@@ -173,6 +173,10 @@ nav a:hover {
     position: relative;
     display: inline-block; /* Make sure the container is inline-block to size with the images */
     margin: 10px; /* Space between the service containers */
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .service img {
@@ -183,15 +187,6 @@ nav a:hover {
 .service img:hover {
     transform: scale(1.05);
     transition: transform 0.6s ease-in-out; /* Smoother scaling */
-}
-.service {
-    width: 45%;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
 }
 
 .overlay {
