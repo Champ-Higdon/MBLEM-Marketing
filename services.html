@@ -56,14 +56,30 @@
         let businessCardIndex = 0;
         
         function switchImages() {
-            document.getElementById('logos').src = logos[logoIndex];
-            document.getElementById('business-cards').src = businessCards[businessCardIndex];
+            const logoImg = document.getElementById('logos');
+            const businessCardImg = document.getElementById('business-cards');
             
-            logoIndex = (logoIndex + 1) % logos.length;
-            businessCardIndex = (businessCardIndex + 1) % businessCards.length;
+            // Apply fade-out effect
+            logoImg.classList.add('fade-out');
+            businessCardImg.classList.add('fade-out');
+
+            setTimeout(() => {
+                // Update indices
+                logoIndex = (logoIndex + 1) % logos.length;
+                businessCardIndex = (businessCardIndex + 1) % businessCards.length;
+
+                // Change images after fade-out
+                logoImg.src = logos[logoIndex];
+                businessCardImg.src = businessCards[businessCardIndex];
+
+                // Remove fade-out class to fade back in
+                logoImg.classList.remove('fade-out');
+                businessCardImg.classList.remove('fade-out');
+                
+            }, 750); // Match transition time (.75s)
         }
         
-        setInterval(switchImages, 3000); // Change image every 3 seconds
+        setInterval(switchImages, 5000); // Change image every 3 seconds
     </script>
 
 </body>
