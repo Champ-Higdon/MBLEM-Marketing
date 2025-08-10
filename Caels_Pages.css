@@ -1,5 +1,5 @@
 :root{
-	--size-mult: 1.25em;
+	--size-mult: 1.25em;/*dev reasons*/
 }
 p {
 	font-size: var(--size-mult);
@@ -216,3 +216,31 @@ nav a:hover {
 .fade-out {
     opacity: 0; 
 }
+
+/* Top bar and elements */
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.font-sizes {
+    display: flex;
+    align: right;
+    align-items: flex-end;
+    gap: 10px;
+}
+.font-sizes button {
+    cursor: pointer;
+    background-color: transparent;
+    color: #F9DB57;
+    border: none;
+}
+.font-size-1, .font-size-2, .font-size-3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500; 
+}
+.font-size-1 {font-size: 1.6rem}
+.font-size-2 {font-size: 2rem}
+.font-size-3 {font-size: 2.3rem}
+
+
