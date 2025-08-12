@@ -50,9 +50,9 @@ header {
 	text-decoration-line: underline;
 	text-decoration-color: #F9DB57;
 }
-/* Remove padding on the home page */
-.home-page header {
-	padding: 0;
+/* Remove padding on the all page */
+header {
+    padding: 0;
 }
 .header-image {
 	width: 100%;
